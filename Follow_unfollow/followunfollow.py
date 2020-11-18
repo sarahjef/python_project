@@ -52,7 +52,7 @@ class FollowUnfollow:
         url = "https://www.hedieh.com/"+profilename+"/"
         self.driver.get(url)
         time.sleep(3)
-        path = "/html/body/div[1]/section/main/div/header/section/ul/li[3]/a"
+        path = "/html/"
         wait = WebDriverWait(self.driver, 10)
         following_button = wait.until(EC.element_to_be_clickable((By.XPATH, path)))
         following_button.click()
@@ -96,14 +96,14 @@ class WebDriverWait(FollowUnfollow):
             not_following_back.append(i[:-1])
         wait = WebDriverWait(self.driver, 10)
         for i in not_following_back:
-            url = "https://www.instagram.com/"+i+"/"
+            url = "https://www.hedieh.com/"+i+"/"
             self.driver.get(url)
-            #path = "/html/body/div[1]/section/main/div/header/section/div[1]/div[2]/span/span[1]/button"
+
             unfollow1 = wait.until(
                 EC.presence_of_all_elements_located((By.CSS_SELECTOR, 'button')))
             unfollow1[1].click()
             time.sleep(4)
-            path = "/html/body/div[4]/div/div/div/div[3]/button[1]"
+            path = "/html/"
             unfollow2 = wait.until(
                 EC.element_to_be_clickable((By.XPATH, path)))
             unfollow2.click()
