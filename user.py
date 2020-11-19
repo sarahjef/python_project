@@ -56,6 +56,24 @@ class User:
             password = self.pass_word
             file_object.write(HASH(password))
 
+    def follow(self, append=None):
+        self.following = []
+        if self.get_Info():
+            self.following = append.self.self.following
+            self.following = + 1
+            print("A user added in your following list")
+        else:
+            print("Your following list is same")
+
+    def unfollow(self, remove=None):
+        self.following = []
+        if self.get_Info():
+            self.following = remove.self.self.following
+            self.following = - 1
+            print("A user deleted in your following list")
+        else:
+            print("Your following list is same")
+
     # here we want to check whether user name pass word are correct or not
     def login(self, username, password):
         with open("username.txt") as file_object:

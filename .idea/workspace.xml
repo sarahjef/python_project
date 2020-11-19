@@ -19,7 +19,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="96611caf-9ef3-466f-a5fe-17c595fbb72b" name="Default Changelist" comment="hedieh new edit" />
+    <list default="true" id="96611caf-9ef3-466f-a5fe-17c595fbb72b" name="Default Changelist" comment="hedieh new edit">
+      <change beforePath="$PROJECT_DIR$/user.py" beforeDir="false" afterPath="$PROJECT_DIR$/user.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -63,6 +65,7 @@
       <workItem from="1605617399050" duration="1281000" />
       <workItem from="1605720590176" duration="2562000" />
       <workItem from="1605787036041" duration="140000" />
+      <workItem from="1605813084569" duration="322000" />
     </task>
     <task id="LOCAL-00001" summary="hedieh new edit">
       <created>1605722911948</created>
@@ -101,6 +104,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="hedieh new edit" />
