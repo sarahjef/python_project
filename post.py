@@ -19,6 +19,7 @@ class Post:
         self.Date = datetime.datetime.now()
         self.num_of_comments = 0
         self.comments = []
+        self.likes = []
 
     # here we can edit the text of our post
     def edit(self, new_text):
@@ -52,6 +53,12 @@ class Post:
                                     level=logging.ERROR)
                 logging.error('the number user entered for deleting a comment is out of range!')
                 print("you don't have that number of comments! ")
+
+
+
+    def like_pst(self, like):
+        self.likes.append(like)
+        count_of_likes = self.likes + 1
 
     # we can comment for a post and append data to comment_list
     def comment(self, content):
